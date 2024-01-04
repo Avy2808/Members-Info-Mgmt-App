@@ -17,7 +17,7 @@ export default function ViewUser() {
     }, []);
 
     const loadUser=async()=>{
-        const result=await axios.get(`http://localhost:8080/users/${id}`);
+        const result=await axios.get(`https://members-info-mgmt-backend-production.up.railway.app/users/${id}`);
         setUser(result.data);
     }
 

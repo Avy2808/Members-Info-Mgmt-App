@@ -26,12 +26,12 @@ export default function EditUser() {
 
     const onSubmit=async(e)=>{
         e.preventDefault();
-        await axios.put(`http://localhost:8080/users/${id}`, user);
+        await axios.put(`https://members-info-mgmt-backend-production.up.railway.app/users/${id}`, user);
         navigate("/");
     };
 
     const loadUser=async()=>{
-        const result=await axios.get(`http://localhost:8080/users/${id}`);
+        const result=await axios.get(`https://members-info-mgmt-backend-production.up.railway.app/users/${id}`);
         setUser(result.data);
     }
 

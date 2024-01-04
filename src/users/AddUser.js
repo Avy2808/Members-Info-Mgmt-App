@@ -20,7 +20,7 @@ export default function AddUser() {
 
     const onSubmit=async(e)=>{
         e.preventDefault();
-        await axios.post("http://localhost:8080/users", user);
+        await axios.post("https://members-info-mgmt-backend-production.up.railway.app/users", user);
         navigate("/");
     };
 
